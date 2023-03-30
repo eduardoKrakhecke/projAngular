@@ -35,6 +35,7 @@ import localePt from '@angular/common/locales/pt'
 import { registerLocaleData } from "@angular/common";
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
+import { ButtonComponent } from './components/button/button.component';
 
 registerLocaleData(localePt)
 
@@ -53,25 +54,26 @@ registerLocaleData(localePt)
     ProductRead2Component,
     ProductUpdateComponent,
     ProductDeleteComponent,
+    ButtonComponent,
   ],
-  imports: [
-    AppRoutingModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
-    MatCardModule,
-    MatButtonModule,
-    MatSnackBarModule,
-    HttpClientModule,
-    FormsModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSortModule,
-  ],
+    imports: [
+        AppRoutingModule,
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatSidenavModule,
+        MatListModule,
+        MatCardModule,
+        MatButtonModule,
+        MatSnackBarModule,
+        HttpClientModule,
+        FormsModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatSortModule,
+    ],
   providers: [{
     provide: LOCALE_ID,
     useValue: 'pt-BR'

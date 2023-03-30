@@ -1,0 +1,8 @@
+<span
+  class="custom-button__wrapper"
+  (click)="onClick()"
+  [class.custom-button__wrapper__icon-left]="iconAlign === 'left'"
+>
+  <ng-content></ng-content>
+  <ng-content select="icon"></ng-content>
+</span>
